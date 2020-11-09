@@ -1,0 +1,232 @@
+@import "variables";
+@import "mixin";
+@import "extends";
+
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #000;
+    justify-content: space-around;
+    color: #fff;
+
+    @include mobile {
+      @include fontSize(10px);
+    }
+
+    .mail-address {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 30px;
+        height: 20px;
+
+        @include mobile {
+          width: 20px;
+          height: 15px;
+        }
+      }
+
+      span {
+      }
+    }
+
+    .info-basket {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .products {
+        margin-right: 1em;
+        span {
+        }
+      }
+
+      .basket {
+        display: flex;
+        img {
+          width: 30px;
+          height: 20px;
+
+          @include mobile {
+            width: 20px;
+            height: 15px;
+          }
+        }
+
+        span {
+        }
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    .list {
+      width: 20em;
+      @include mobile {
+        @include fontSize(10px);
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          .subcategory {
+            display: none;
+          }
+
+          margin-right: 3em;
+
+          @include mobile {
+            margin-right: 1em;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            color: rgba(45, 43, 43, 0.733);
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+              color: rgba(88, 88, 231, 0.828);
+            }
+          }
+        }
+
+        .active {
+          &:hover {
+            .subcategory {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .logo-list {
+      margin: 0 30px;
+
+      @include mobile {
+        margin: 0 20px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+
+        @include mobile {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  main {
+    .top {
+      height: 500px;
+      background-image: url("../img/cameron-venti-VRq8JxI-pZg-unsplash.jpg");
+      background-color: #000;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      .text {
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 33%;
+          text-transform: uppercase;
+          color: #fff;
+          letter-spacing: 2rem;
+          font-size: 6em;
+          font-weight: 400;
+
+          @include mobile {
+            left: 12%;
+          }
+        }
+      }
+    }
+
+    .middle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 3em 0;
+
+      .left {
+        width: 800px;
+
+        .top-text {
+          h1 {
+            font-size: 4.2rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+          }
+        }
+
+        .main-text {
+          p {
+            color: #2f2f2fcc;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            font-size: 19px;
+            font-weight: 100;
+            line-height: 35px;
+          }
+        }
+
+        .footer {
+          .social {
+            display: flex;
+            justify-content: center;
+            li {
+              margin-top: 2em;
+              margin-right: 15px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+              a {
+                img {
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        img {
+          width: 450px;
+          height: 500px;
+        }
+      }
+    }
+  }
+
+  footer {
+  }
+}

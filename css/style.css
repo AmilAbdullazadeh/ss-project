@@ -1,0 +1,228 @@
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #000;
+  justify-content: space-around;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  body header {
+    font-size: 10px;
+    font-size: 0.625rem;
+  }
+}
+
+body header .mail-address {
+  display: flex;
+  align-items: center;
+}
+
+body header .mail-address img {
+  width: 30px;
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  body header .mail-address img {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+body header .info-basket {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+body header .info-basket .products {
+  margin-right: 1em;
+}
+
+body header .info-basket .basket {
+  display: flex;
+}
+
+body header .info-basket .basket img {
+  width: 30px;
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  body header .info-basket .basket img {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+body nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+}
+
+body nav .list {
+  width: 20em;
+}
+
+@media (max-width: 767px) {
+  body nav .list {
+    font-size: 10px;
+    font-size: 0.625rem;
+  }
+}
+
+body nav .list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body nav .list ul li {
+  margin-right: 3em;
+}
+
+body nav .list ul li .subcategory {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body nav .list ul li {
+    margin-right: 1em;
+  }
+}
+
+body nav .list ul li:last-child {
+  margin-right: 0;
+}
+
+body nav .list ul li a {
+  color: rgba(45, 43, 43, 0.733);
+  transition: all 0.25s ease-in-out;
+}
+
+body nav .list ul li a:hover {
+  color: rgba(88, 88, 231, 0.828);
+}
+
+body nav .list ul .active:hover .subcategory {
+  display: block;
+}
+
+body nav .logo-list {
+  margin: 0 30px;
+}
+
+@media (max-width: 767px) {
+  body nav .logo-list {
+    margin: 0 20px;
+  }
+}
+
+body nav .logo-list img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  body nav .logo-list img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+body main .top {
+  height: 500px;
+  background-image: url("../img/cameron-venti-VRq8JxI-pZg-unsplash.jpg");
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body main .top .text h1 {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2rem;
+  font-size: 6em;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  body main .top .text h1 {
+    left: 12%;
+  }
+}
+
+body main .middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3em 0;
+}
+
+body main .middle .left {
+  width: 800px;
+}
+
+body main .middle .left .top-text h1 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+body main .middle .left .main-text p {
+  color: #2f2f2fcc;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 19px;
+  font-weight: 100;
+  line-height: 35px;
+}
+
+body main .middle .left .footer .social {
+  display: flex;
+  justify-content: center;
+}
+
+body main .middle .left .footer .social li {
+  margin-top: 2em;
+  margin-right: 15px;
+}
+
+body main .middle .left .footer .social li:last-child {
+  margin-right: 0;
+}
+
+body main .middle .left .footer .social li a img {
+  width: 30px;
+}
+
+body main .middle .right img {
+  width: 450px;
+  height: 500px;
+}
+/*# sourceMappingURL=style.css.map */
