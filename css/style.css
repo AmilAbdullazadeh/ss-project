@@ -160,19 +160,14 @@ body main .top {
 
 body main .top .text h1 {
   position: absolute;
-  top: 50%;
-  left: 33%;
+  top: 45%;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 2rem;
   font-size: 6em;
   font-weight: 400;
-}
-
-@media (max-width: 767px) {
-  body main .top .text h1 {
-    left: 12%;
-  }
+  width: 100%;
+  text-align: center;
 }
 
 body main .middle {
@@ -224,5 +219,128 @@ body main .middle .left .footer .social li a img {
 body main .middle .right img {
   width: 450px;
   height: 500px;
+}
+
+body .footer .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+body .footer .row .left-footer video {
+  width: 100%;
+}
+
+body .footer .row .right-footer p {
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+body .footer .row .right-footer ul {
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+body .footer .row .right-footer ul li {
+  list-style-type: disc;
+}
+
+body .offer-div .border-div {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(37, 36, 36, 0.326);
+  margin: 15px 0;
+}
+
+body .cards-div .row-top {
+  justify-content: center;
+  margin: 10px 0;
+}
+
+body .cards-div .row-top h1 {
+  text-transform: uppercase;
+  color: rgba(42, 42, 42, 0.776);
+}
+
+body .cards-div .row-bottom .card-deck {
+  margin: 0;
+}
+
+body .cards-div .row-bottom .card {
+  border: none;
+}
+
+body .cards-div .row-bottom .card .card-img-top {
+  border-radius: 0;
+}
+
+body .cards-div .row-bottom .card .card-body {
+  text-align: center;
+}
+
+body .cards-div .row-bottom .card .card-body .card-btn {
+  border-radius: 0;
+}
+
+body .bg-cont {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/cameron-venti-VRq8JxI-pZg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+@media (max-width: 767px) {
+  body .bg-cont {
+    background-attachment: inherit;
+  }
+}
+
+body .bg-cont .btn-bg {
+  margin: 0;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+body .bg-cont .btn-bg .left {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  body .bg-cont .btn-bg .left {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+
+body .bg-cont .btn-bg .left img {
+  width: 100%;
+  max-width: 600px;
+}
+
+body .bg-cont .btn-bg .right {
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+  text-align: center;
+}
+
+body .bg-cont .btn-bg .right .card {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+body .bg-cont .btn-bg .right .card .card-body .card-text {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+body .bg-cont .btn-bg .right .card .card-btn {
+  border-radius: 0;
 }
 /*# sourceMappingURL=style.css.map */
